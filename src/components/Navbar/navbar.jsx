@@ -1,5 +1,6 @@
 import React from 'react';
 import { AddressSelector } from '../AddressSelector/addressSelector';
+import { Popover } from '../Popover/popover';
 import './navbar.css';
 
 export function Navbar() {
@@ -26,6 +27,7 @@ export function Navbar() {
           <img className='navbar__item-link__img' src='/Images/ic_cart.png' alt='carrinho icone' />
           Carrinho
         </button>
+        <Popover />
       </div>
     </div>
   );
