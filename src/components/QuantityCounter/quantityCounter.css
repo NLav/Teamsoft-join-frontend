@@ -1,0 +1,33 @@
+.quantity-counter {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  margin-left: auto;
+  padding: 4px;
+  border: 1px solid var(--deliverize-orange);
+  border-radius: 7px;
+}
+
+.quantity-counter__minus-icon {
+  width: 20px;
+  margin-right: auto;
+}
+
+.quantity-counter__value {
+  width: 15%;
+  text-align: center;
+  border: none;
+  cursor: default;
+}
+
+.quantity-counter__plus-icon {
+  width: 20px;
+  margin-left: auto;
+}
+
+.quantity-counter__icon--disabled {
+  filter: grayscale(100%) opacity(50%);
+}
