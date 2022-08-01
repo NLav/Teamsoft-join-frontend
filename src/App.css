@@ -7,3 +7,9 @@
   align-items: center;
   padding: 24px 0 0 0;
 }
+
+@media screen and (max-width: 1200px) {
+  .app__content {
+    flex-direction: column;
+  }
+}
