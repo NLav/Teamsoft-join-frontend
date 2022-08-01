@@ -6,6 +6,13 @@ import './navbar.css';
 export function Navbar() {
   return (
     <div className='navbar'>
+      <div className='navbar__back-button'>
+        <img
+          className='navbar__back-button-img'
+          src='/Images/ic_navbar-back.png'
+          alt='go back button'
+        />
+      </div>
       <div className='navbar__logo'>
         <img className='navbar__logo-img' src='/Images/logo.png' alt='deliverize logo' />
       </div>
