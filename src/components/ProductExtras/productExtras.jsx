@@ -39,8 +39,29 @@ export function ProductExtras() {
           <label className='card__options-item__price'>+ R$ 1,50</label>
         </div>
       </div>
-      <div className='card__note'>
-        <label className='card__note-title'>Precisa de Talher?</label>
+      <div className='card__cutlery'>
+        <label className='card__cutlery-title'>Precisa de Talher?</label>
+        <label className='card__cutlery-radio-label'>
+          Sim
+          <input
+            className='card__cutlery-radio-button'
+            type='radio'
+            id='sim'
+            name='cutlery'
+            value='Sim'
+          />
+        </label>
+        <label className='card__cutlery-radio-label'>
+          Não
+          <input
+            className='card__cutlery-radio-button'
+            type='radio'
+            id='nao'
+            name='cutlery'
+            value='Não'
+            checked
+          />
+        </label>
       </div>
       <div className='card__add'>
         <div className='card__add__counter'>
