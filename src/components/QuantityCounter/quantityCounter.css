@@ -14,6 +14,7 @@
 .quantity-counter__minus-icon {
   width: 20px;
   margin-right: auto;
+  cursor: pointer;
 }
 
 .quantity-counter__value {
@@ -26,6 +27,7 @@
 .quantity-counter__plus-icon {
   width: 20px;
   margin-left: auto;
+  cursor: pointer;
 }
 
 .quantity-counter__icon--disabled {
