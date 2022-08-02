@@ -63,8 +63,13 @@
   justify-content: center;
   align-items: flex-start;
   width: 100%;
-  padding: 12px;
+}
+
+.card__cutlery-title {
   background-color: #fff7cf;
+  width: 100%;
+  padding: 12px;
+
 }
 
 .card__cutlery-radio-button {
@@ -83,6 +88,7 @@ input[type='radio'] {
   -webkit-appearance: none;
 }
 
+/* .card__cutlery-radio-button style */
 input[type='radio']:before {
   content: '';
   display: block;
@@ -91,6 +97,7 @@ input[type='radio']:before {
   border-radius: 50%;
 }
 
+/* .card__cutlery-radio-button style */
 input[type='radio']:checked:before {
   background: var(--deliverize-orange);
 }
@@ -128,6 +135,11 @@ input[type='radio']:checked:before {
   background-color: var(--deliverize-orange);
   border: none;
   border-radius: 6px;
+  cursor: pointer;
+}
+
+.card__add__button:hover {
+  background-color: var(--deliverize-red);
 }
 
 @media screen and (max-width: 1200px) {
