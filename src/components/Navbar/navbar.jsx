@@ -1,9 +1,11 @@
 import React from 'react';
 import { AddressSelector } from '../AddressSelector/addressSelector';
-import { Popover } from '../Popover/popover';
 import './navbar.css';
 
 export function Navbar() {
+  // Simulates an array of registered addresses
+  const addresses = ['R. Antonio Braune, 222', 'Av. José Moreira, 109'];
+
   return (
     <div className='navbar'>
       <div className='navbar__back-button'>
@@ -17,7 +19,8 @@ export function Navbar() {
         <img className='navbar__logo-img' src='/Images/logo.png' alt='deliverize logo' />
       </div>
       <div className='navbar__address'>
-        <AddressSelector />
+        {/* Sends addresses to AdressSelector via Props */}
+        <AddressSelector addresses={addresses} />
       </div>
       <div className='navbar__search'>
         <input
@@ -34,7 +37,6 @@ export function Navbar() {
           <img className='navbar__item-link__img' src='/Images/ic_cart.png' alt='carrinho icone' />
           Carrinho
         </button>
-        <Popover />
       </div>
     </div>
   );
