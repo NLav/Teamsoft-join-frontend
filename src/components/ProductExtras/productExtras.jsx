@@ -9,8 +9,6 @@ export function ProductExtras(props) {
   const [togglePopover, setTogglePopover] = useState(false);
   const [maxItems, setMaxItems] = useState(0);
   const [items, setItems] = useState([]);
-  // Boolean to get and set 'Precisa de Talher?' value
-  // const [cutlery, setCutlery] = useState(false);
 
   useEffect(() => {
     axios.get(config.api.url).then((res) => {
@@ -50,8 +48,6 @@ export function ProductExtras(props) {
             id='sim'
             name='cutlery'
             value='Sim'
-            // Set value for 'Precisa de Talher?'
-            // onChange={(e) => setCutlery(true)}
           />
         </label>
         <label className='card__cutlery-radio-label'>
@@ -62,8 +58,6 @@ export function ProductExtras(props) {
             id='nao'
             name='cutlery'
             value='Não'
-            // Set value for 'Precisa de Talher?'
-            // onChange={(e) => setCutlery(false)}
             defaultChecked
           />
         </label>
