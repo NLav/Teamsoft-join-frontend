@@ -8,9 +8,15 @@ export function ProductInformation(props) {
       <label className='product__title'>{props.apiInformation.nm_product}</label>
       <label className='product__description'>{props.apiInformation.description}</label>
       <div className='product__prices'>
-        <label className='product__prices-value'>R${props.apiInformation.vl_price}</label>
-        {props.apiInformation.vl_discount === 0 ? null : (
-          <label className='product__prices-value--old'>R${props.apiInformation.vl_discount}</label>
+        {props.apiInformation.vl_discount ? (
+          <>
+            <label className='product__prices-value'>R${props.apiInformation.vl_discount?.toFixed(2).replace('.', ',')}</label>
+            <label className='product__prices-value--old'>R${props.apiInformation.vl_price?.toFixed(2).replace('.', ',')}</label>
+          </>
+        ) : (
+          <>
+            <label className='product__prices-value'>R${props.apiInformation.vl_price?.toFixed(2).replace('.', ',')}</label>
+          </>
         )}
       </div>
     </div>
