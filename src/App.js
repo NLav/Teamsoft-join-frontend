@@ -8,21 +8,30 @@ import config from './config/api.json';
 
 function App() {
   const [apiInformation, setApiInformation] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     axios.get(config.api.url).then((res) => {
       setApiInformation(res.data[0]);
+      setLoading(false);
     });
   }, []);
 
   return (
-    <div className='app'>
-      <Navbar />
-      <div className='app__content'>
-        <ProductInformation apiInformation={apiInformation} />
-        <ProductExtras />
+    <>
+      {loading ? (
+        <div className='loading'>
+          <img src='/Images/loading.png' className='loading__img' alt='loading' />
+        </div>
+      ) : null}
+      <div className='app'>
+        <Navbar />
+        <div className='app__content'>
+          <ProductInformation apiInformation={apiInformation} />
+          <ProductExtras />
+        </div>
       </div>
-    </div>
+    </>
   );
 }
 
