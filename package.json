@@ -1,5 +1,6 @@
 {
   "name": "teamsoft-join-frontend",
+  "homepage": "https://www.nlavoura.com/teamsoftjoinfrontend",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

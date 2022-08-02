@@ -21,7 +21,7 @@ function App() {
     <>
       {loading ? (
         <div className='loading'>
-          <img src='/Images/loading.png' className='loading__img' alt='loading' />
+          <img src='/teamsoftjoinfrontend/Images/loading.png' className='loading__img' alt='loading' />
         </div>
       ) : null}
       <div className='app'>

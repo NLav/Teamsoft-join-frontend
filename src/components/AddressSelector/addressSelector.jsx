@@ -23,7 +23,7 @@ export function AddressSelector(props) {
       <div className='address-selector__icon'>
         <img
           className='address-selector__icon-image'
-          src='/Images/ic_dropdown.png'
+          src='/teamsoftjoinfrontend/Images/ic_dropdown.png'
           alt='dropdown icon'
         />
       </div>

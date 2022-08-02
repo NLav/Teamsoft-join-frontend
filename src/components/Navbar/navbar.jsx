@@ -11,12 +11,12 @@ export function Navbar() {
       <div className='navbar__back-button'>
         <img
           className='navbar__back-button-img'
-          src='/Images/ic_navbar-back.png'
+          src='/teamsoftjoinfrontend/Images/ic_navbar-back.png'
           alt='go back button'
         />
       </div>
       <div className='navbar__logo'>
-        <img className='navbar__logo-img' src='/Images/logo.png' alt='deliverize logo' />
+        <img className='navbar__logo-img' src='/teamsoftjoinfrontend/Images/logo.png' alt='deliverize logo' />
       </div>
       <div className='navbar__address'>
         {/* Sends addresses to AdressSelector via Props */}
@@ -30,11 +30,11 @@ export function Navbar() {
       </div>
       <div className='navbar__item'>
         <button className='navbar__item-link'>
-          <img className='navbar__item-link__img' src='/Images/ic_login.png' alt='entrar icone' />
+          <img className='navbar__item-link__img' src='/teamsoftjoinfrontend/Images/ic_login.png' alt='entrar icone' />
           Entrar
         </button>
         <button className='navbar__item-link'>
-          <img className='navbar__item-link__img' src='/Images/ic_cart.png' alt='carrinho icone' />
+          <img className='navbar__item-link__img' src='/teamsoftjoinfrontend/Images/ic_cart.png' alt='carrinho icone' />
           Carrinho
         </button>
       </div>
