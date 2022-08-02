@@ -9,16 +9,36 @@
   right: 12px;
   background-color: #f8f8f8;
   border-radius: 5px;
+  clip-path: inset(0 0 100% 0);
+  -webkit-clip-path: inset(0 0 100% 0);
+  transition: all 0.3s ease-out;
+}
+
+.popover--hidden {
+  display: flex;
+  clip-path: inset(0 0 0 0);
+  -webkit-clip-path: inset(0 0 0 0);
+  transition: all 0.3s ease-out;
 }
 
 .popover__arrow {
   position: absolute;
   height: 16px;
   width: 16px;
-  top: 0;
+  top: 70px;
   right: 50px;
   background-color: var(--deliverize-orange);
   transform: translate(-50%, -50%) rotate(45deg);
+  clip-path: inset(0 100% 100% 0);
+  -webkit-clip-path: inset(0 100% 100% 0);
+  transition: all 0.3s ease-out;
+}
+
+.popover__arrow--hidden {
+  display: flex;
+  clip-path: inset(0 0 0 0);
+  -webkit-clip-path: inset(0 0 0 0);
+  transition: all 0.01s ease-out;
 }
 
 .popover__title {
